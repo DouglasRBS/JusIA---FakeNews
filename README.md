@@ -4,8 +4,6 @@ A **JusIA** é uma plataforma inteligente desenvolvida para detectar fake news e
 
 O projeto foi criado com foco em acessibilidade, especialmente para pessoas com deficiência ou com pouca familiaridade digital.
 
-<img width="1344" height="588" alt="Captura de tela 2026-02-15 222325" src="https://github.com/user-attachments/assets/d83d675f-3190-4e8b-8349-01e8b75be274" />
-
 ## 📌 Objetivo
 
 A JusIA tem como objetivo:
@@ -57,7 +55,7 @@ A JusIA tem como objetivo:
 ## 🖼️ Interface da Plataforma
 
 <p align="center">
-  <img src="assets/jusia-home.png" width="800">
+  <img width="1344" height="588" alt="Captura de tela 2026-02-15 222325" src="https://github.com/user-attachments/assets/d83d675f-3190-4e8b-8349-01e8b75be274" />
 </p>
 
 ---
