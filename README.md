@@ -66,8 +66,6 @@ A JusIA tem como objetivo:
 - CSS
 - JavaScript
 
-*(Caso tenha usado outra tecnologia, adiciona aqui)*
-
 ---
 
 ## 📚 Status do Projeto
