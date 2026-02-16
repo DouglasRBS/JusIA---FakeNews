@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JusIA - Justiça Inteligente</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="topbar" role="banner">
+        <div class="brand">
+            <div class="logo">⚖️</div>
+            <div class="brand-text">
+                <div class="title">JusIA</div>
+                <div class="subtitle">Justiça Inteligente - Contra a desinformação</div>
+            </div>
+        </div>
+
+        <nav class="nav" role="navigation" aria-label="Menu principal">
+            <a href="#inicio">Início</a>
+            <a href="#como">Como funciona</a>
+            <a href="#verificar">Verificar</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero" aria-labelledby="hero-title">
+            <div class="hero-left">
+                <h1 id="hero-title">Protegendo a verdade nas eleições</h1>
+                
+                <div class="hero-ctas">
+                    <a class="btn primary" href="#verificar">Verificar agora</a>
+                    
+                </div>
+            </div>
+
+            <aside class="hero-right" aria-hidden="true">
+                <div class="mascot" id="mascot">
+                    <div class="stand"></div>
+                    <div class="scale">
+                        <div class="eye left"></div>
+                        <div class="eye right"></div>
+                        <div class="mouth" id="mascotMouth"></div>
+                        <div class="pan pan-left"></div>
+                        <div class="pan pan-right"></div>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section id="como" class="how" aria-labelledby="how-title">
+            <h2 id="how-title">Como funciona</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>🔍 Análise de Conteúdo</h3>
+                    <p>Simulamos verificação de textos, imagens e vídeos para identificar sinais de manipulação e boatos.</p>
+                </div>
+                <div class="card">
+                    <h3>🔗 Integração em Tempo Real</h3>
+                    <p>Conceito de integração com redes sociais para notificar usuários vulneráveis assim que algo suspeito aparece.</p>
+                </div>
+                <div class="card">
+                    <h3>📣 Canal de Denúncia</h3>
+                    <p>Usuários podem enviar conteúdo para análise e receber orientações simples sobre como proceder.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="verificar" class="check" aria-labelledby="check-title">
+            <h2 id="check-title">Verificação Interativa</h2>
+            <p class="muted">Cole uma manchete, texto ou link. A análise é simulada para fins acadêmicos.</p>
+
+            <div class="panel">
+                <label for="inputText" class="sr-only">Insira texto ou link</label>
+                <textarea id="inputText" placeholder="Cole aqui o texto, manchete ou link..." aria-label="Texto para verificar"></textarea>
+
+                <div class="controls">
+                    <button id="btnCheck" class="btn primary">🔎 Verificar</button>
+                    <button id="btnRead" class="btn">🔊 Ler em voz alta</button>
+                    <button id="btnClear" class="btn ghost">Limpar</button>
+                </div>
+
+                <div class="upload-area">
+                    <label for="fileInput" class="upload-label">📎 Anexar imagem ou vídeo</label>
+                    <input type="file" id="fileInput" accept="image/*,video/*" hidden>
+                    <span id="fileName"></span>
+                </div>
+
+                <div id="progressWrap" class="progress-wrap" aria-hidden="true">
+                    <div class="progress-bar" id="progressBar" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                    <div class="progress-text" id="progressText">Analisando...</div>
+                </div>
+
+                <div id="resultCard" class="result-card" aria-live="polite"></div>
+
+                <div class="integration-sim">
+                    <p><strong>Simular integração</strong></p>
+                    <div class="chips">
+                        <button class="chip" data-sim="facebook"> <img src="img/facebook.png" alt="Facebook" class="chip-icon"> Verificar postagem do Facebook</button>
+                        <button class="chip" data-sim="whatsapp"><img src="img/whatsapp.png" alt="" class="chip-icon"> Verificar postagem do WhatsApp</button>
+                        <button class="chip" data-sim="twitter"> <img src="img/twitter.png" alt="Twitter" class="chip-icon"> Checar tweet</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>⚖️ JusIA - Justiça Inteligente • Protótipo acadêmico • 2025</div>
+    </footer>
+
+    <div id="toast" class="toast" aria-hidden="true" role="status"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
